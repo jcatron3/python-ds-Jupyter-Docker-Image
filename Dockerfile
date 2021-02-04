@@ -3,6 +3,7 @@ FROM jupyter/scipy-notebook
 # Add RUN statements to install packages as the $NB_USER defined in the base images.
 RUN conda install --quiet --yes \
     'selenium' \
+    pip install \
     'webdriver-manager'
 # Add a "USER root" statement followed by RUN statements to install system packages using apt-get,
 # change file permissions, etc.
