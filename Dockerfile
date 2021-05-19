@@ -5,6 +5,12 @@ RUN conda install --quiet --yes \
     'selenium' \
     && pip install \
     'webdriver-manager'
+RUN pip install wget
+RUN pip install -U scikit-learn
+RUN pip install folium
+RUN pip install geopandas
+RUN pip install python-dotenv
+RUN pip install tensorflow
 # Add a "USER root" statement followed by RUN statements to install system packages using apt-get,
 # change file permissions, etc.
 
